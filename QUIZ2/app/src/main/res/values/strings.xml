@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QUIZ</string>
+    <string name="select_security_question">Select Security Question</string>
+    <string-array name="security_questions">
+        <item>Which is your favourite car?</item>
+        <item>Which is your favourite sport?</item>
+        <item>Who is you favourite author?</item>
+        <item>Who was your first boss?</item>
+        <item>Who was your first roommate?</item>
+    </string-array>
+</resources>

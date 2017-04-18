@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pradeep.restaurant.Login"
+    android:background="@drawable/log_image">
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/loginEmail"
+        android:hint="Enter your Email ID"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/loginPass"
+        android:textColorHint="#b0a9a9"
+        android:textColor="#ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/loginPass"
+        android:hint="Enter Password"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#b0a9a9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLoginn"
+        android:textColor="@android:color/black"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/loginPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="@android:color/holo_orange_light" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/loginIncorrect"
+        android:layout_marginTop="95dp"
+        android:layout_alignParentStart="true"
+        android:textColor="#fe0909" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login"
+        android:id="@+id/tvLoginL"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/loginEmail"
+        android:layout_alignEnd="@+id/loginEmail"
+        android:textSize="100px"
+        android:textColor="#21d1c5"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

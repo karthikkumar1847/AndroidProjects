@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="harish.quiz.Result">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result Report"
+        android:id="@+id/TvResultDispResult"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        android:background="#a2e6e3e3"
+        android:textColor="#216230" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/TvQuestionAtmptResult"
+        android:text="Questions Attempted :"
+        android:layout_marginTop="44dp"
+        android:textSize="29dp"
+        android:textColor="#333131"
+        android:layout_below="@+id/TvResultDispResult"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvQuestAtmpt" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imvcorrect"
+            android:layout_weight="2"
+            android:background="@drawable/correct" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imvwrong"
+            android:layout_weight="2"
+            android:background="@drawable/wrong" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentEnd="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvcorrectResult"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TvWrongResult"
+        android:layout_weight="1"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textSize="27dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvQuestAtmpt"
+        android:layout_alignBottom="@+id/TvQuestionAtmptResult"
+        android:layout_alignParentEnd="true"
+        android:textSize="27dp" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/BtnMainMenuResult"
+        android:background="#d0d6891c"
+        android:textSize="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/tvQuestAtmpt"
+        android:layout_toStartOf="@+id/tvQuestAtmpt"
+        android:numStars="5"
+        android:clickable="false"
+        android:progressTint="#47be37" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvScoreResult"
+        android:layout_below="@+id/ratingBar"
+        android:textSize="27dp"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

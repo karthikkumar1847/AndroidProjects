@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Register"
+    android:background="@drawable/reg_image">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="37dp"
+        android:id="@+id/tvdisp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Full Name"
+        android:ems="10"
+        android:id="@+id/regName"
+        android:layout_below="@+id/tvdisp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/regEmail"
+        android:layout_below="@+id/regName"
+        android:layout_alignStart="@+id/regName"
+        android:hint="Enter Email" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/regPassword"
+        android:layout_below="@+id/regEmail"
+        android:layout_alignStart="@+id/regEmail"
+        android:hint="Enter Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/btnRegister"
+        android:background="@android:color/holo_green_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/regnIcorrectStmt"
+        android:layout_below="@+id/tvdisp"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#fd0303"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:id="@+id/regAddressEdt"
+        android:hint="Enter Address"
+        android:layout_below="@+id/etCinfirmPwdR"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etCinfirmPwdR"
+        android:layout_below="@+id/regPassword"
+        android:layout_alignParentStart="true"
+        android:hint="Confirm Password" />
+</RelativeLayout>
